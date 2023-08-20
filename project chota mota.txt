@@ -1,0 +1,8 @@
+products , quantity , s_price , c_price ,
+sum, etc
+
+first i have to get an array from the user 
+of the above first row variables
+then show them all display all 
+
+then i will do user will come to buy a product i will find the product then will sum up all the items and then give it to the user a receipt.
