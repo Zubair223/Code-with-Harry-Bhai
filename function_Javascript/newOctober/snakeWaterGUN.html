@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        // Generate a random character
+function getRandomCharacter() {
+  const characters = 'SWG';
+  const randomIndex = Math.floor(Math.random() * characters.length);
+  return characters[randomIndex];
+}
+
+//let confirm = true;
+while(true)
+{
+    debugger;
+    const randomChar = getRandomCharacter();
+    let ask = prompt("Please enter S,W or G");
+if(randomChar.charAt(0) == 'S' && ask.charAt(0) == 'W') 
+     alert("Computer WON!");
+else if(randomChar.charAt(0) == 'S' && ask.charAt(0) == 'G') 
+     alert("You WON!");
+else if(randomChar.charAt(0) == 'W' && ask.charAt(0) == 'S') 
+     alert("You WON!");
+else if(randomChar.charAt(0) == 'W' && ask.charAt(0) == 'G') 
+     alert("Computer WON!");
+else if(randomChar.charAt(0) == 'G' && ask.charAt(0) == 'S') 
+     alert("Computer WON!");
+else if(randomChar.charAt(0) == 'G' && ask.charAt(0) == 'W') 
+     alert("You WON!");
+    else if(randomChar == ask)
+    alert("Both WON!");
+    else
+    {
+        alert("YOU Entered wrong choice!");
+        break;
+    }
+confirm("Do you want to continue!");
+}
+    </script>
+</body>
+</html>

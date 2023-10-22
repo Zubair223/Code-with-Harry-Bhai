@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        
+    </div>
+    <script>
+        debugger;
+        let jokeArray = 
+    [`What do you call a boomerang that won’t come back? <i><br>
+A stick.`,
+
+`What does a cloud wear under his raincoat? <i><br>
+Thunderwear.`,
+
+`other? <i><br>
+Dill with it.`,
+
+`What time is it when the clock strikes 13? <i><br>
+Time to get a new clock.`,
+
+`How does a cucumber become a pickle? <i><br>
+It goes through a jarring experience.`,
+
+
+`Jokes for kidsWhat did one toilet say to the other? <i><br>
+You look a bit flushed.`,
+
+`What do you think of that new diner on the moon? <i><br>
+Food was good, but there really wasn’t much atmosphere.`,
+
+`Why did the dinosaur cross the road? <i><br>
+Because the chicken wasn’t born yet.`,
+
+`Why can’t Elsa from Frozen have a balloon? <i><br>
+Because she will "let it go, let it go."`,
+
+
+`What musical instrument is found in the bathroom? <i><br>
+A tuba toothpaste.`,
+
+
+
+`Why did the kid bring a ladder to school? <i><br>
+Because she wanted to go to high school.`,
+
+
+`What do you call a dog magician? <i><br>
+A labracadabrador.`,
+
+
+`Where would you find an elephant? <i><br>
+The same place you lost her.`,
+
+
+
+`How do you get a squirrel to like you? <i><br>
+Act like a nut.`,
+
+
+`What do you call two birds in love? <i><br>
+Tweethearts`,
+
+
+`How does a scientist freshen her breath? <i><br>
+With experi-mints.`,
+
+
+`How are false teeth like stars? <i><br>
+They come out at night.`,
+
+
+`What building in your town has the most stories? <i><br>
+The public library.`,
+
+
+`What’s worse than finding a worm in your apple? <i><br>
+Finding half a worm.`,
+
+
+`What is a computer's favorite snack? <i><br>
+Computer chips.`,
+
+
+`What did one volcano say to the other? <i><br>
+I lava you.`,
+
+
+`How do we know that the ocean is friendly? <i><br>
+It waves.`,
+
+
+`What is a tornado’s favorite game to play? <i><br>
+Twister.`,
+
+
+`How does the moon cut his hair? <i><br>
+Eclipse it.`,
+
+
+`How do you talk to a giant? <i><br>
+Use big words.`,
+
+
+
+
+`What animal is always at a baseball game? <i><br>
+A bat.`,
+
+
+`What falls in winter but never gets hurt? <i><br>
+Snow.`,
+
+
+`What did the Dalmatian say after lunch? <i><br>
+That hit the spot.`,
+
+
+`Why did the kid cross the playground? <i><br>
+To get to the other slide.`,
+
+
+`What do you call a droid that takes the long way around? <i><br>
+R2 detour.`,
+
+
+`Why did the cookie go to the hospital? <i><br>
+Because he felt crummy.`,
+
+
+`Why was the baby strawberry crying? <i><br>
+Because her mom and dad were in a jam.`,
+
+
+
+
+`How do you make a lemon drop? <i><br>
+Just let it fall.`,
+
+
+`What did the limestone say to the geologist? <i><br>
+Don’t take me for granite.`,
+
+
+`Why does a seagull fly over the sea? <i><br>
+Because if it flew over the bay, it would be a baygull.`,
+
+
+`What kind of water can’t freeze? <i><br>
+Hot water.`,
+
+
+`What kind of tree fits in your hand? <i><br>
+A palm tree.`,
+
+
+`What do you call a dinosaur that is sleeping? <i><br>
+A dino-snore.`,
+
+
+`What is fast, loud and crunchy? <i><br>
+A rocket chip.`,
+
+
+`Why did the teddy bear say no to dessert? <i><br>
+Because she was stuffed.`,
+
+
+`What has ears but cannot hear? <i><br>
+A cornfield.`,
+
+
+`What did the left eye say to the right eye? <i><br>
+Between us, something smells.`,
+
+
+`What did one plate say to the other plate? <i><br>
+Dinner is on me.`,
+
+
+`Why did the student eat his homework? <i><br>
+Because the teacher told him it was a piece of cake.`,
+
+
+`look? <i><br>Because when you find it, you stop looking.
+`
+,
+`What is brown, hairy and wears sunglasses? <i><br>
+A coconut on vacation.`,
+
+
+
+`What do you say to a rabbit on its birthday? <i><br>
+Hoppy Birthday.`,
+
+`guaranteed? <i><br>
+A year older.`,
+
+
+`Why do candles always go on the top of cakes? <i><br>
+Because it's hard to light them from the bottom.`,
+
+
+`What do cakes and baseball teams have in common? <i><br>
+They both need a good batter.`,
+
+
+`What goes up but never comes down? <i><br>
+Your age.`,
+
+
+`What does every birthday end with? <i><br>
+The letter Y.`,
+
+
+`What did the tiger say to her cub on his birthday? <i><br>
+It's roar birthday.`,
+
+
+`Why did the girl put her cake in the freezer? <i><br>
+She wanted to ice it.`,
+
+
+`Does a green candle burn longer than a pink one? <i><br>
+No, they both burn shorter.`,
+
+
+`Why did the little girl hit her birthday cake with a hammer? <i><br>
+It was a pound cake.`,
+
+
+`Where did the school kittens go for their field trip? <i><br>
+To the mew-seum.`,
+
+
+`What kind of kitten works for the Red Cross? <i><br>
+A first-aid kit.`
+    ]
+
+
+
+
+    setInterval(() => {
+
+    let result = Math.floor( Math.random() * jokeArray.length);
+    for(let i = 0; i < jokeArray.length; i++)
+    {
+        debugger;
+        if(result == i)
+        {
+          
+            document.body.firstElementChild.innerHTML = jokeArray[i];
+            document.body.firstElementChild.style.color = 'red';
+            document.body.firstElementChild.style.fontSize = '32px'; // You can change '12px' to your desired font size
+            document.body.firstElementChild.style.textAlign = 'center';
+// You can change '12px' to your desired font size
+
+        }
+    }
+    
+}, 3000);
+
+
+
+    </script>
+</body>
+</html>

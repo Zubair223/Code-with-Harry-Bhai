@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        debugger;
+        do
+        {
+        let age = Number.parseInt(prompt("Enter your age !"));
+        if(age >=18)
+        {
+            if(age > 4)
+            {
+                //location.href = "http://google.com/search?q=";
+            }
+            alert("Yes, you are eligible to drive");
+            document.body.style.backgroundColor = 'green';
+            
+        }
+        else
+        {
+            if(age < 0)
+            {
+                console.error("Please enter a valid age");
+                break; 
+                document.body.style.backgroundColor = 'black';
+                //continue; 
+            }
+            alert("Sorry, you are not eligible");
+            document.body.style.backgroundColor = 'red';
+        }
+    }while(confirm("Do you want prompt again?"));
+
+    </script>
+</body>
+</html>
